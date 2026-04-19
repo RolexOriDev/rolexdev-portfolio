@@ -102,22 +102,34 @@ export default function AboutSection() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#e8e6e0] shadow-lg">
-                <img
-                  src={ABOUT_IMG}
-                  alt="Developer workspace illustration"
-                  className="w-full h-full object-cover"
-                />
+              {/* Designed gradient visual element */}
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#333] shadow-lg bg-gradient-to-br from-[#3d3df5]/20 via-[#2a2a33] to-[#1a1a1f]">
+                <div className="w-full h-full flex items-center justify-center relative">
+                  {/* Animated code brackets */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                    <svg className="w-full h-full" viewBox="0 0 400 400" fill="none">
+                      <path d="M100 100 L150 200 L100 300" stroke="#3d3df5" strokeWidth="2" opacity="0.5" />
+                      <path d="M300 100 L250 200 L300 300" stroke="#3d3df5" strokeWidth="2" opacity="0.5" />
+                      <circle cx="200" cy="200" r="80" stroke="#3d3df5" strokeWidth="1" opacity="0.3" />
+                    </svg>
+                  </div>
+                  {/* Center text */}
+                  <div className="text-center z-10">
+                    <div className="font-['Space_Grotesk'] text-5xl font-bold text-white mb-2">{'<'}</div>
+                    <div className="font-['DM_Sans'] text-sm text-[#aaa] tracking-widest">6 YEARS</div>
+                    <div className="font-['Space_Grotesk'] text-5xl font-bold text-white mt-2">{'>'}</div>
+                  </div>
+                </div>
               </div>
               {/* Floating badge */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.4, delay: 0.5 }}
-                className="absolute -bottom-4 -left-4 bg-white border border-[#e8e6e0] rounded-xl px-4 py-3 shadow-md"
+                className="absolute -bottom-4 -left-4 bg-[#2a2a33] border border-[#3d3df5] rounded-xl px-4 py-3 shadow-md"
               >
-                <div className="font-['Space_Grotesk'] text-2xl font-bold text-[#111]">6+</div>
-                <div className="font-['DM_Sans'] text-xs text-[#888]">Years of Experience</div>
+                <div className="font-['Space_Grotesk'] text-2xl font-bold text-white">6+</div>
+                <div className="font-['DM_Sans'] text-xs text-[#aaa]">Years of Experience</div>
               </motion.div>
               {/* Floating tech badge */}
               <motion.div
