@@ -102,13 +102,15 @@ export default function AboutSection() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              {/* Integrated visual element - seamless with site design */}
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#333] bg-[#2a2a33]">
+              {/* Indigo gradient visual element */}
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#333] shadow-lg bg-gradient-to-br from-[#3d3df5] via-[#2d2d5f] to-[#1a1a2e]" style={{
+                backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(61, 61, 245, 0.1) 0%, transparent 50%), linear-gradient(135deg, #3d3df5 0%, #2d2d5f 50%, #1a1a2e 100%)'
+              }}>
                 <div className="w-full h-full flex items-center justify-center">
                   {/* Centered text display */}
                   <div className="text-center">
-                    <div className="font-['Space_Grotesk'] text-6xl font-bold text-[#3d3df5]">6+</div>
-                    <div className="font-['DM_Sans'] text-sm text-[#aaa] tracking-widest mt-4">YEARS</div>
+                    <div className="font-['Space_Grotesk'] text-6xl font-bold bg-gradient-to-r from-white to-[#aaa] bg-clip-text text-transparent">6+</div>
+                    <div className="font-['DM_Sans'] text-sm text-[#ccc] tracking-widest mt-4">YEARS BUILDING</div>
                   </div>
                 </div>
               </div>
