@@ -9,12 +9,12 @@ import { useRef } from "react";
 const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663576664890/4rZd6W7EPNpZoVq8vKMH6x/about-visual-CZrLLPjNU4VbofgQg8WmGw.webp";
 
 const timeline = [
-  { year: "2020", event: "Started professional development career" },
-  { year: "2021", event: "Mastered Java Spring Boot & REST APIs" },
-  { year: "2022", event: "Expanded into full-stack JavaScript (React, Node.js)" },
-  { year: "2023", event: "Integrated Python for data pipelines & automation" },
-  { year: "2024", event: "Led backend architecture for enterprise projects" },
-  { year: "2025", event: "Building scalable microservices & cloud-native apps" },
+  { year: "2021", event: "Started professional development career" },
+  { year: "2022", event: "Mastered Java Spring Boot & REST APIs" },
+  { year: "2023", event: "Expanded into full-stack JavaScript (React, Node.js)" },
+  { year: "2024", event: "Integrated Python for data pipelines & automation" },
+  { year: "2025", event: "Led backend architecture for enterprise projects" },
+  { year: "2026", event: "Building scalable microservices & cloud-native apps" },
 ];
 
 function useScrollReveal() {
