@@ -42,7 +42,7 @@ export default function AboutSection() {
           <div className="section-divider flex-1" />
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 gap-16 items-center">
           {/* Text column */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -94,46 +94,7 @@ export default function AboutSection() {
             </div>
           </motion.div>
 
-          {/* Illustration column */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex justify-center lg:justify-end"
-          >
-            <div className="relative">
-              {/* Indigo gradient visual element */}
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#333] shadow-lg bg-gradient-to-br from-[#3d3df5] via-[#2d2d5f] to-[#1a1a2e]" style={{
-                backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(61, 61, 245, 0.1) 0%, transparent 50%), linear-gradient(135deg, #3d3df5 0%, #2d2d5f 50%, #1a1a2e 100%)'
-              }}>
-                <div className="w-full h-full flex items-center justify-center">
-                  {/* Centered text display */}
-                  <div className="text-center">
-                    <div className="font-['Space_Grotesk'] text-6xl font-bold bg-gradient-to-r from-white to-[#aaa] bg-clip-text text-transparent">6+</div>
-                    <div className="font-['DM_Sans'] text-sm text-[#ccc] tracking-widest mt-4">YEARS BUILDING</div>
-                  </div>
-                </div>
-              </div>
-              {/* Floating badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={inView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.4, delay: 0.5 }}
-                className="absolute -bottom-4 -left-4 bg-[#1a1a1f] border border-[#3d3df5] rounded-xl px-4 py-3 shadow-md backdrop-blur-sm"
-              >
-                <div className="font-['Space_Grotesk'] text-sm font-bold text-[#3d3df5]">EXPERIENCE</div>
-              </motion.div>
-              {/* Floating tech badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={inView ? { opacity: 1, scale: 1 } : {}}
-                transition={{ duration: 0.4, delay: 0.6 }}
-                className="absolute -top-4 -right-4 bg-[#3d3df5] text-white rounded-xl px-4 py-3 shadow-md"
-              >
-                <div className="font-['JetBrains_Mono'] text-xs font-medium">Java · JS · Python</div>
-              </motion.div>
-            </div>
-          </motion.div>
+
         </div>
       </div>
     </section>
