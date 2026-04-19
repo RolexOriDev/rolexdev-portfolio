@@ -69,15 +69,15 @@ export default function HeroSection() {
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden"
-      style={{ background: "#f8f7f4" }}
+      style={{ background: "#1a1a1f" }}
     >
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-70"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{ backgroundImage: `url(${HERO_BG})` }}
       />
       {/* Subtle overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#f8f7f4] via-[#f8f7f4]/80 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a1f] via-[#1a1a1f]/90 to-transparent" />
 
       <div className="container relative z-10 pt-24 pb-16">
         <motion.div
@@ -95,7 +95,7 @@ export default function HeroSection() {
           {/* Main heading */}
           <motion.h1
             variants={itemVariants}
-            className="font-['Space_Grotesk'] text-5xl md:text-7xl font-bold text-[#111111] leading-[1.05] tracking-tight mb-4"
+            className="font-['Space_Grotesk'] text-5xl md:text-7xl font-bold text-white leading-[1.05] tracking-tight mb-4"
           >
             Hi, I'm{" "}
             <span className="relative inline-block">
@@ -112,7 +112,7 @@ export default function HeroSection() {
           {/* Typewriter subtitle */}
           <motion.div
             variants={itemVariants}
-            className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium text-[#555] mb-6 h-10"
+            className="font-['Space_Grotesk'] text-2xl md:text-3xl font-medium text-[#ccc] mb-6 h-10"
           >
             <TypewriterText texts={roles} />
           </motion.div>
@@ -120,9 +120,9 @@ export default function HeroSection() {
           {/* Description */}
           <motion.p
             variants={itemVariants}
-            className="font-['DM_Sans'] text-lg text-[#666] leading-relaxed max-w-xl mb-10"
+            className="font-['DM_Sans'] text-lg text-[#aaa] leading-relaxed max-w-xl mb-10"
           >
-            Senior developer with <strong className="text-[#111]">6 years of experience</strong> building
+            Senior developer with <strong className="text-white">6 years of experience</strong> building
             robust, scalable software. Specializing in Java backend systems, JavaScript full-stack
             applications, and Python automation — from microservices to production-grade web platforms.
           </motion.p>
@@ -131,13 +131,13 @@ export default function HeroSection() {
           <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
             <button
               onClick={() => document.querySelector("#projects")?.scrollIntoView({ behavior: "smooth" })}
-              className="flex items-center gap-2 px-6 py-3 bg-[#111111] text-white font-['DM_Sans'] font-medium rounded-md hover:bg-[#3d3df5] transition-colors duration-200"
+              className="flex items-center gap-2 px-6 py-3 bg-white text-[#1a1a1f] font-['DM_Sans'] font-medium rounded-md hover:bg-[#3d3df5] hover:text-white transition-colors duration-200"
             >
               View Projects
             </button>
             <a
               href="mailto:rolexoridev@gmail.com"
-              className="flex items-center gap-2 px-6 py-3 border border-[#111111] text-[#111111] font-['DM_Sans'] font-medium rounded-md hover:border-[#3d3df5] hover:text-[#3d3df5] transition-colors duration-200"
+              className="flex items-center gap-2 px-6 py-3 border border-white text-white font-['DM_Sans'] font-medium rounded-md hover:border-[#3d3df5] hover:text-[#3d3df5] transition-colors duration-200"
             >
               <Mail size={16} />
               Get in Touch
@@ -146,7 +146,7 @@ export default function HeroSection() {
               href="https://github.com/RolexOriDev"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-6 py-3 border border-[#ddd] text-[#555] font-['DM_Sans'] font-medium rounded-md hover:border-[#3d3df5] hover:text-[#3d3df5] transition-colors duration-200"
+              className="flex items-center gap-2 px-6 py-3 border border-[#444] text-[#aaa] font-['DM_Sans'] font-medium rounded-md hover:border-[#3d3df5] hover:text-[#3d3df5] transition-colors duration-200"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
@@ -158,7 +158,7 @@ export default function HeroSection() {
           {/* Stats row */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-wrap gap-8 mt-14 pt-8 border-t border-[#e8e6e0]"
+            className="flex flex-wrap gap-8 mt-14 pt-8 border-t border-[#333]"
           >
             {[
               { value: "6+", label: "Years Experience" },
@@ -167,8 +167,8 @@ export default function HeroSection() {
               { value: "∞", label: "Lines of Code" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-['Space_Grotesk'] text-3xl font-bold text-[#111]">{stat.value}</div>
-                <div className="font-['DM_Sans'] text-sm text-[#888] mt-0.5">{stat.label}</div>
+              <div className="font-['Space_Grotesk'] text-3xl font-bold text-white">{stat.value}</div>
+              <div className="font-['DM_Sans'] text-sm text-[#888] mt-0.5">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -181,7 +181,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#888] hover:text-[#3d3df5] transition-colors"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-[#666] hover:text-[#3d3df5] transition-colors"
       >
         <span className="font-['DM_Sans'] text-xs tracking-widest uppercase">Scroll</span>
         <motion.div

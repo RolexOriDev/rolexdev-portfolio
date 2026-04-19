@@ -62,6 +62,7 @@ const techTags = [
   "Java", "Spring Boot", "JavaScript", "TypeScript", "React", "Node.js",
   "Python", "Django", "Docker", "Git", "MySQL", "PostgreSQL", "MongoDB",
   "Redis", "REST API", "Microservices", "Linux", "Maven", "Gradle", "Next.js",
+  "HTML5", "CSS3", "Tailwind CSS",
 ];
 
 function SkillBar({ name, level, delay }: { name: string; level: number; delay: number }) {
