@@ -66,7 +66,7 @@ export default function ContactSection() {
                 <div>
                   <div className="font-['DM_Sans'] text-xs text-[#888] mb-0.5">Email</div>
                   <div className="font-['DM_Sans'] text-sm font-medium text-[#111] group-hover:text-[#3d3df5] transition-colors link-underline">
-                    rolexoridev@gmail.com
+                    RolexOriDev@gmail.com
                   </div>
                 </div>
               </a>
