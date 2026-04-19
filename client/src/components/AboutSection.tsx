@@ -9,12 +9,12 @@ import { useRef } from "react";
 const ABOUT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663576664890/4rZd6W7EPNpZoVq8vKMH6x/about-visual-CZrLLPjNU4VbofgQg8WmGw.webp";
 
 const timeline = [
-  { year: "2018", event: "Started professional development career" },
-  { year: "2019", event: "Mastered Java Spring Boot & REST APIs" },
-  { year: "2020", event: "Expanded into full-stack JavaScript (React, Node.js)" },
-  { year: "2021", event: "Integrated Python for data pipelines & automation" },
-  { year: "2022", event: "Led backend architecture for enterprise projects" },
-  { year: "2024", event: "Building scalable microservices & cloud-native apps" },
+  { year: "2020", event: "Started professional development career" },
+  { year: "2021", event: "Mastered Java Spring Boot & REST APIs" },
+  { year: "2022", event: "Expanded into full-stack JavaScript (React, Node.js)" },
+  { year: "2023", event: "Integrated Python for data pipelines & automation" },
+  { year: "2024", event: "Led backend architecture for enterprise projects" },
+  { year: "2025", event: "Building scalable microservices & cloud-native apps" },
 ];
 
 function useScrollReveal() {
@@ -102,15 +102,13 @@ export default function AboutSection() {
             className="flex justify-center lg:justify-end"
           >
             <div className="relative">
-              {/* Clean gradient visual element */}
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#333] shadow-lg bg-gradient-to-br from-[#3d3df5] via-[#2d2d5f] to-[#1a1a2e]" style={{
-                backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(61, 61, 245, 0.1) 0%, transparent 50%), linear-gradient(135deg, #3d3df5 0%, #2d2d5f 50%, #1a1a2e 100%)'
-              }}>
+              {/* Integrated visual element - seamless with site design */}
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-2xl overflow-hidden border border-[#333] bg-[#2a2a33]">
                 <div className="w-full h-full flex items-center justify-center">
                   {/* Centered text display */}
                   <div className="text-center">
-                    <div className="font-['Space_Grotesk'] text-6xl font-bold bg-gradient-to-r from-white to-[#aaa] bg-clip-text text-transparent">6+</div>
-                    <div className="font-['DM_Sans'] text-sm text-[#ccc] tracking-widest mt-4">YEARS BUILDING</div>
+                    <div className="font-['Space_Grotesk'] text-6xl font-bold text-[#3d3df5]">6+</div>
+                    <div className="font-['DM_Sans'] text-sm text-[#aaa] tracking-widest mt-4">YEARS</div>
                   </div>
                 </div>
               </div>
